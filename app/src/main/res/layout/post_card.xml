@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="7dp"
+    android:elevation="2dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/im_post_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/black"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_post_title_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post title to be displayed here"
+            android:layout_gravity="start"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+            <TextView
+                android:id="@+id/tv_post_createdBy_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="created by"
+                android:textSize="12sp"
+                android:layout_gravity="start"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tv_post_date_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Date Created"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
